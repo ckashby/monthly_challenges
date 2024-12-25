@@ -1,0 +1,57 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+env/
+venv/
+ENV/
+.venv/
+.Python
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+db.sqlite3-journal
+
+# Media files (if applicable)
+media/
+
+# Static files (if applicable, can be generated during deployment)
+staticfiles/
+static/
+
+# Secrets and sensitive data
+.env
+*.env
+
+# Node modules (if using frontend tools like npm/yarn)
+node_modules/
+
+# macOS system files
+.DS_Store
+
+# VS Code project files
+.vscode/
+
+# PyCharm project files
+.idea/
+
+# Testing
+coverage/
+*.coverage
+nosetests.xml
+test-results/
+
+# MyPy
+.mypy_cache/
+dmypy.json
+dmypy.json.#
+
+# Other
+*.swp
+*.swo
