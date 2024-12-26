@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound
 
-# create a python array with the months of the year as keys and examples of challenges as values
 monthly_challenges = {
     "jan": "This is the January challenge",
     "feb": "This is the February test",
@@ -17,12 +16,13 @@ monthly_challenges = {
     "dec": "This is the December goal"
 }
 
-# def index(request):
-#     return HttpResponse("Hola amigos!")
-
 
 def monthly_challenge_by_number(request, month):
-    return HttpResponse(month)
+    try:
+        months = list(monthly_challenges.keys())
+        return HttpResponse(monthly_challenges[months[month - 1]])
+    except:
+        return HttpResponseNotFound("This month is not supported!")
 
 
 def monthly_challenge(request, month):
