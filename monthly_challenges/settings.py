@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'challenges',
 ]
 
 MIDDLEWARE = [
@@ -55,8 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            # BASE_DIR / 'templates', # This is the path to the project templates directory NOT USED
-            'challenges/templates' # This is the path to the challenges app templates directory
+            # BASE_DIR / 'challenges' / 'templates',   # This is the path to the project templates directory NOT USED
         ],
         'APP_DIRS': True,
         'OPTIONS': {
