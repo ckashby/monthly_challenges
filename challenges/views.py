@@ -21,11 +21,8 @@ monthly_challenges = {
 def monthly_challenge_by_number(request, month):
     try:
         months = list(monthly_challenges.keys())
-        # return HttpResponse(monthly_challenges[months[month - 1]])
         redirect_month = months[month - 1]
         redirect_path = reverse("month-challenge", args=[redirect_month])
-        # Update using f-string TODO: Use reverse() instead of f-string
-        # return HttpResponseRedirect("/challenges/" + redirect_month)
         return HttpResponseRedirect(redirect_path)
     except:
         return HttpResponseNotFound("Invalid month.")
