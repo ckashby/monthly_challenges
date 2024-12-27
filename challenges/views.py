@@ -20,10 +20,11 @@ monthly_challenges = {
 
 
 def index(request):
-    list_items = ""
     months = list(monthly_challenges.keys())
     
-    return render(request, "challenges/index.html", {})
+    return render(request, "challenges/index.html", {
+        "months": months
+    })
 
 
 def monthly_challenge_by_number(request, month):
