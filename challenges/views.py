@@ -15,7 +15,8 @@ monthly_challenges = {
     "sep": "This is the September goal",
     "oct": "This is the October challenge",
     "nov": "This is the November test",
-    "dec": "This is the December goal"
+    # "dec": "This is the December goal"
+    "dec": None
 }
 
 
