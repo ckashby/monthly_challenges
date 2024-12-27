@@ -5,17 +5,17 @@ from django.template.loader import render_to_string
 from django.http import Http404 
 
 monthly_challenges = {
-    "jan": "This is the January challenge",
-    "feb": "This is the February test",
-    "mar": "This is the March goal",
-    "apr": "This is the April challenge",
-    "may": "This is the May test",
-    "jun": "This is the June goal",
-    "jul": "This is the July challenge",
-    "aug": "This is the August test",
-    "sep": "This is the September goal",
-    "oct": "This is the October challenge",
-    "nov": "This is the November test",
+    "jan": "Eat no meat for the entire month",
+    "feb": "Walk for at least 20 minutes every day",
+    "mar": "Study Django for at least 20 minutes every day",
+    "apr": "Eat no meat for the entire month",
+    "may": "Swim for at least 20 minutes every day",
+    "jun": "Study Django for at least 20 minutes every day",
+    "jul": "Eat no meat for the entire month",
+    "aug": "Read a book for at least 1 hour every day",
+    "sep": "Study Django for at least 20 minutes every day",
+    "oct": "Eat no meat for the entire month",
+    "nov": "Surf for at least 20 minutes every day",
     # "dec": "This is the December goal"
     "dec": None
 }
